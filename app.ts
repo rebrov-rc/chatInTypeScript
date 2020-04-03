@@ -29,8 +29,8 @@ for (let i = 0; i < iUp.length; i++ ) {
     </div>`;
 }
 
-let main: HTMLElement = document.querySelectorAll('.mainWrap') as HTMLElement;
-let tm: HTMLElement = document.querySelectorAll('.time') as HTMLElement;
+let main: HTMLElement = document.querySelectorAll('.mainWrap');
+let tm: HTMLElement = document.querySelectorAll('.time');
 for(let n = 0; n < main.length; n++){
     main[n].style.width = '500px';
     main[n].style.display = 'flex';
