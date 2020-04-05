@@ -2,7 +2,7 @@ const container: HTMLElement = document.querySelector('.center-wrap') as HTMLEle
 // ===================================================
 // const 
 // ===================================================
-let timeOfDate: any = new Date();
+let timeOfDate: Date = new Date();
 let hours: number = timeOfDate.getHours();
 let min: number = timeOfDate.getMinutes();
 
@@ -29,8 +29,8 @@ for (let i = 0; i < iUp.length; i++ ) {
     </div>`;
 }
 
-let main: HTMLElement = document.querySelectorAll('.mainWrap');
-let tm: HTMLElement = document.querySelectorAll('.time');
+let main: NodeListOf<Element> = document.querySelectorAll('.mainWrap');
+let tm: NodeListOf<Element> = document.querySelectorAll('.time');
 for(let n = 0; n < main.length; n++){
     main[n].style.width = '500px';
     main[n].style.display = 'flex';
